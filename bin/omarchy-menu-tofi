@@ -451,7 +451,7 @@ show_update_hardware_menu() {
 }
 
 show_system_menu() {
-    local opts="Back\n Lock\n󱄄 Screensaver\n󰒲 Suspend\n󰜉 Restart\n󰐥 Shutdown"
+    local opts="Back\n󰒲 Suspend\n󰐥 Shutdown\n󰜉 Restart\n󱄄 Screensaver\n Lock"
     case $(menu "System" "$opts") in
         Back) show_main_menu ;;
         *Lock*) omarchy-lock-screen ;;
